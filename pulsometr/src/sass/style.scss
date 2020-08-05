@@ -1,9 +1,11 @@
-@import 'base/variables';
-@import 'blocks/promo';
-@import 'blocks/header';
-@import 'blocks/buttons';
+@import "base/variables";
+@import "blocks/promo";
+@import "blocks/header";
+@import "blocks/buttons";
+@import "blocks/advantages";
+@import "blocks/titles";
 * {
-    font-family: 'Museo Sans Cyrl', sans-serif;
+    font-family: "Museo Sans Cyrl", sans-serif;
 }
 
 .container {
