@@ -11,4 +11,16 @@
         font-weight: 500;
         text-transform: initial;
     }
+
+    .error {
+        border: 2px solid $main-color;
+    }
+    
+    label.error {
+        text-transform: none;
+        color: #ffffff;
+        text-align: center;
+        border: none;
+        margin-bottom: 15px;
+    }
 }
