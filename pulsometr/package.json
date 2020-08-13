@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "animate.css": "^4.1.0",
     "owl.carousel": "^2.3.4",
     "tiny-slider": "^2.9.3"
   },
