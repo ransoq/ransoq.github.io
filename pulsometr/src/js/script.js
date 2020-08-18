@@ -31,12 +31,12 @@ document.querySelector('.next').addEventListener('click', function () {
           $('.catalog-item__content').eq(i).toggleClass('catalog-item__content_active');
           $('.catalog-item__list').eq(i).toggleClass('catalog-item__list_active');
 
-        })
+        });
       });
-    };
+    }
 
     toggleSlide('.catalog-item__link');
-    toggleSlide('.catalog-item__back')
+    toggleSlide('.catalog-item__back');
 
     // Modal
 
@@ -51,7 +51,7 @@ document.querySelector('.next').addEventListener('click', function () {
       $(this).on('click', function() {
         $('#order .modal__descr').text($('.catalog-item__subtitle').eq(i).text());
         $('.overlay, #order').fadeIn('slow');
-      })
+      });
     });
 
     // Validate
@@ -80,7 +80,7 @@ document.querySelector('.next').addEventListener('click', function () {
           }
         }
       });
-    };
+    }
 
     validateForms('#consultation-form');
     validateForms('#consultation form');
