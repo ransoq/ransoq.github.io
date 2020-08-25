@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'Plumb';
+    font-display: swap;
+    src: local('PLumb-700'),
+        url('../fonts/plumb-bold.otf') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Plumb';
+    font-display: swap;
+    src: local('Plumb-300'),
+        url('../fonts/plumb-regular.otf') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Plumb';
+    font-display: swap;
+    src: local('Plumb-100'),
+        url('../fonts/plumb-light.otf') format('woff2');
+    font-weight: 100;
+    font-style: normal;
+}
