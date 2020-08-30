@@ -78,9 +78,12 @@ const personalMovieDB = {
     }
 };
 
-// personalMovieDB.start();
-// personalMovieDB.rememberMyFilms();
-// personalMovieDB.detectPersonalLevel();
-// personalMovieDB.showMyDB();
+personalMovieDB.start();
+personalMovieDB.rememberMyFilms();
+personalMovieDB.detectPersonalLevel();
+personalMovieDB.showMyDB();
 personalMovieDB.writeYourGenres();
-// personalMovieDB.toggleVisibleMyDB();
+personalMovieDB.toggleVisibleMyDB();
+
+// Получение элементов со страницы
+
