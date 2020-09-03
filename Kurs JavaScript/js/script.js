@@ -84,6 +84,3 @@ personalMovieDB.detectPersonalLevel();
 personalMovieDB.showMyDB();
 personalMovieDB.writeYourGenres();
 personalMovieDB.toggleVisibleMyDB();
-
-// Получение элементов со страницы
-
