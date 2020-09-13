@@ -242,4 +242,8 @@ window.addEventListener('DOMContentLoaded', () => {
             });
         });
     }
+
+    console.log(postData);
 });
+
+// Test
