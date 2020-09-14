@@ -1,28 +1,18 @@
 "use strict";
 
-// const now = new Date('2020-09-04');
-// new Date.parse('2020-09-04');
+const test = time => {
+    return new Promise(resolve => {
+        setTimeout(() => resolve(), time);
+    });
+};
 
-// console.log(now.setHours(18, 40));
-// console.log(now);
+// test(1000).then(() => console.log('1000ms'));
+// test(2000).then(() => console.log('2000ms'));
 
+// Promise.all([test(1000), test(2000)]).then(() => {
+//     console.log('All');
+// });
 
-
-// console.log(now.getFullYear());
-// console.log(now.getMonth());
-// console.log(now.getDate());
-// console.log(now.getDay());
-// console.log(now.getUTCHours());
-
-// console.log(now.getTimezoneOffset());
-// console.log(now.getTime());
-
-let start = new Date();
-
-for (let i = 0; i < 100000; i++) {
-    let some = i ** 3;
-}
-
-let end = new Date();
-
-alert(`Цикл отработал за ${end - start} мс`);
+Promise.race([test(1000), test(2000)]).then(() => {
+    console.log('All');
+});
