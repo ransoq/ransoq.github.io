@@ -1,18 +1,17 @@
 "use strict";
 
-const test = time => {
-    return new Promise(resolve => {
-        setTimeout(() => resolve(), time);
-    });
-};
+// const ans = prompt('Введите число');
+// const reg = /\d/;
+// console.log(ans.match(reg));
 
-// test(1000).then(() => console.log('1000ms'));
-// test(2000).then(() => console.log('2000ms'));
+// console.log(ans.search(reg));
 
-// Promise.all([test(1000), test(2000)]).then(() => {
-//     console.log('All');
-// });
+// const pass = prompt('Password');
 
-Promise.race([test(1000), test(2000)]).then(() => {
-    console.log('All');
-});
+// console.log(pass.replace(/./g, 
+
+// console.log('12-34-24'.replace(/-/g, ':'));
+
+const string = 'My name is R2D2';
+
+console.log(string.match(/\D/g));
