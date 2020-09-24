@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/ransoq/ransoq.github.io/issues"
   },
-  "homepage": "https://github.com/ransoq/ransoq.github.io#readme"
+  "homepage": "https://github.com/ransoq/ransoq.github.io#readme",
+  "devDependencies": {
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.12"
+  }
 }
