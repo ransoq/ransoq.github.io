@@ -1,28 +1,33 @@
-const btn = document.querySelector('.btn'),
-      elem = document.querySelector('.box');
+class GotService {
 
-let pos = 0;
-let secPos = 300;
+    constructor() {
+        this._apiBase = "https://www.anapioficeandfire.com/api";
+    }
+    async getResource(url) {
+        const res = await fetch(`${this._apiBase}${url}`);
+    
+        if (!res.ok) {
+            throw new Error(`Could not fetch ${url}, status: ${res.status}`);
+        }
+    
+        return await res.json();
+    }
 
-function myAnimation() {
-    pos++;
-    elem.style.top = pos + "px";
-    elem.style.left = pos + "px";
+    getAllCharacters() {
+        return this.getResource("/characters?page=5&pageSize=10");
+    }
 
-    if (pos < 300) {
-        requestAnimationFrame(myAnimation);
+    getCharacter(id) {
+        return this.getResource(`/characters/${id}`);
     }
 }
 
-function mySecAnimation() {
-    secPos--;
-    elem.style.top = secPos - "px";
-    elem.style.left = secPos - "px";
+const got = new GotService();
 
-    if (pos === 300) {
-        requestAnimationFrame(mySecAnimation);   
-    }
-}
+got.getAllCharacters()
+    .then(res => {
+        res.forEach(item => console.log(item.name));
+    });
 
-btn.addEventListener('click', () => requestAnimationFrame(myAnimation));
-btn.addEventListener('click', () => requestAnimationFrame(mySecAnimation));
+got.getCharacter(130)
+    .then(res => console.log(res));
