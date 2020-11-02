@@ -26,4 +26,27 @@ export default class RestoService {
         console.log(item);
         return item;
     }
+
+    async setOrder(order) {
+        const number = await this.getOrderNumber();
+        const newOrder = {
+            id: number,
+            order: order
+        }
+        fetch(`${this._apiBase}/orders`, {
+            method: "POST",
+            headers: {
+                'Content-type': 'application/json;charset=utf-8'
+            },
+            body: JSON.stringify(newOrder)
+        }).catch('Error');
+        
+    }
+
+    async getOrderNumber() {
+        const res = await this.getResource('/orders/');
+        const orderNumber = res.length + 1;
+
+        return orderNumber
+    }
 }

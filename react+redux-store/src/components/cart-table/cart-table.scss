@@ -46,4 +46,41 @@
         border: 1px solid #fff;
         cursor: pointer;
     }
+    &__remove {
+        width: 25px;
+        height: 25px;
+        text-align: center;
+        color: #fff;
+        font-size: 20px;
+        border-radius: 100%;
+        border: 1px solid #fff;
+        cursor: pointer;
+    }
+    &__add {
+        width: 25px;
+        height: 25px;
+        text-align: center;
+        color: #fff;
+        font-size: 20px;
+        border-radius: 100%;
+        border: 1px solid #fff;
+        cursor: pointer;
+    }
+    .order{
+        display: block;
+        margin: 30px auto 0px auto;
+        width: 170px;
+        height: 40px;
+        border-radius: 20px;
+        background-color: #05ff00;
+        border: none;
+        font-weight: bold;
+        font-size: 14px;
+        cursor: pointer;
+    }
+    .qtty {
+        text-align: center;
+        color: #fff;
+        font-size: 24px;
+    }
 }
